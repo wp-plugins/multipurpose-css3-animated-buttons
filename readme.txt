@@ -10,10 +10,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Replace your old fashioned buttons with Multipurpose CSS3 Animated Buttons.
 
-= Warning! =
-
-Internet Explorer does not yet support the @keyframes rule or the animation property!Check this [link](http://www.w3schools.com/css3/css3_animations.asp) for more info.
-
 == Description ==
 
 Multipurpose CSS3 Animated Buttons allow you to select between social media buttons or your own links.
@@ -31,6 +27,10 @@ Advanced settings to enter your custom css and more.
 = Multipurpose CSS3 Animated Buttons Needs Your Support =
 
 If you enjoy using Multipurpose CSS3 Animated Buttons and find it useful, think about the time and effort put into it so please consider [__making a donation__](http://www.sebla.dk/mab/donate/). Your donation will help encourage and support the plugin's continued development and better user support.
+
+= Warning! =
+
+Internet Explorer does not yet support the @keyframes rule or the animation property!Check this [link](http://www.w3schools.com/css3/css3_animations.asp) for more info.
 
 == Installation ==
 
