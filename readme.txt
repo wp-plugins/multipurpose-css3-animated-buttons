@@ -13,18 +13,18 @@ Replace your old fashioned buttons with Multipurpose CSS3 Animated Buttons.
 == Description ==
 
 Multipurpose CSS3 Animated Buttons allow you to select between social media buttons or your own links.
-1.Fully customizable social buttons with like, tweet, google+1, pin-it and feedburner counts.
-1.Fully customizable links and titles for your buttons.
-1.Uses CSS3 Animations.
-1.Uses cookies to style visited buttons.
-1.Basic settings which covers vital customizations and easy as pie.
-1.Advanced settings to enter your custom css and more.
+Fully customizable social buttons with like, tweet, google+1, pin-it and feedburner counts.
+Fully customizable links and titles for your buttons.
+Uses CSS3 Animations.
+Uses cookies to style visited buttons.
+Basic settings which covers vital customizations and easy as pie.
+Advanced settings to enter your custom css and more.
 
 * [Docs](http://www.sebla.dk/mab/docs/)
 * [FAQ](http://www.sebla.dk/mab/faq/)
 * [Support](http://www.sebla.dk/mab/support/)
 
-= Contact Form 7 Needs Your Support =
+= Multipurpose CSS3 Animated Buttons Needs Your Support =
 
 If you enjoy using Multipurpose CSS3 Animated Buttons and find it useful, think about the time and effort put into it so please consider [__making a donation__](http://www.sebla.dk/mab/donate/). Your donation will help encourage and support the plugin's continued development and better user support.
 
