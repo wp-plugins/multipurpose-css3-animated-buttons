@@ -157,24 +157,24 @@ background-position:0 -160px,0 0;
 #visited-3d-4,#unvisited-3d-4{
 background-position:0 -239px,0 0;
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.7s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.5s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.5s; /* Opera */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.7s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.7s; /* Opera */
 }
 #visited-3d-5,#unvisited-3d-5{
 background-position:0 -320px,0 0;
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.9s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.5s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.5s; /* Opera */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.9s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.9s; /* Opera */
 }
 #visited-3d-6,#unvisited-3d-6{
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.1s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.5s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.5s; /* Opera */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.1s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.1s; /* Opera */
 }
 #visited-3d-7,#unvisited-3d-7{
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.3s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.5s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.5s; /* Opera */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.3s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.3s; /* Opera */
 }
 #visited-3d-8,#unvisited-3d-8{
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.5s; /* Firefox */
@@ -183,13 +183,13 @@ background-position:0 -320px,0 0;
 }
 #visited-3d-9,#unvisited-3d-9{
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.7s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.5s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.5s; /* Opera */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.7s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.7s; /* Opera */
 }
 #visited-3d-0,#unvisited-3d-0{
 -moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.9s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.5s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.5s; /* Opera */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.9s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.9s; /* Opera */
 }
 @keyframes intro
 {
