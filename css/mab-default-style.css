@@ -138,9 +138,9 @@ animation:intro 4s ease-in-out;
 }
 /* @Animations*/
 #visited-3d-1,#unvisited-3d-1{ 
--moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.2s; /* Firefox */
--webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.2s; /* Safari and Chrome */
--o-animation:intro 4s ease-in-out; -o-animation-delay:0.2s; /* Opera */
+-moz-animation:intro 4s ease-in-out; -moz-animation-delay:0.1s; /* Firefox */
+-webkit-animation:intro 4s ease-in-out ; -webkit-animation-delay:0.1s; /* Safari and Chrome */
+-o-animation:intro 4s ease-in-out; -o-animation-delay:0.1s; /* Opera */
 }
 #visited-3d-2,#unvisited-3d-2{
 background-position:0 -79px,0 0;
