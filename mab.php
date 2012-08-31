@@ -174,7 +174,7 @@
 		$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches );
 		$img = $matches [1] [0];
 		if ( empty ( $img ) ) {
-			$img = plugins_url() . '/multipurpose-animated-buttons/images/default.jpg';
+			$img = plugins_url() . '/multipurpose-css3-animated-buttons/images/default.jpg';
 		}
 		return $img;
 	}
