@@ -6,9 +6,9 @@
 			<link rel="stylesheet" type="text/css" href="<?php echo plugins_url() . '/multipurpose-animated-buttons/css/mab-default-style.css'; ?>" media="screen" />
 			<style type="text/css">
 				.button-3d {
-					background-image: url("<?php echo plugins_url() . '/multipurpose-animated-buttons/images/social-hi.png'; ?>");
-					background-image: url("<?php echo plugins_url() . '/multipurpose-animated-buttons/images/social-hi.png'; ?>"), -webkit-gradient(linear, 0 0, 0 100%, from(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>), to(#<?php echo $GLOBALS['basic_gradient_color_2']; ?>));
-					background-image: url("<?php echo plugins_url() . '/multipurpose-animated-buttons/images/social-hi.png'; ?>"), -moz-linear-gradient(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>, #<?php echo $GLOBALS['basic_gradient_color_2']; ?>);
+					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>");
+					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>"), -webkit-gradient(linear, 0 0, 0 100%, from(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>), to(#<?php echo $GLOBALS['basic_gradient_color_2']; ?>));
+					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>"), -moz-linear-gradient(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>, #<?php echo $GLOBALS['basic_gradient_color_2']; ?>);
 					box-shadow: 2px 2px 2px #<?php echo $GLOBALS['basic_shadow_color']; ?>;
 				}
 			</style>
