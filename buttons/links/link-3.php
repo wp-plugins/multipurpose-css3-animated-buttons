@@ -1,4 +1,4 @@
-	<form name="input-8" method="get" action="<?php echo plugins_url() . '/multipurpose-animated-buttons/cookies/visited.php'; ?>">				<!-- THIS FORMS USE COOKIES TO SET BUTTON ID'S. -->
+	<form name="input-8" method="get" action="<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/cookies/visited.php'; ?>">				<!-- THIS FORMS USE COOKIES TO SET BUTTON ID'S. -->
 		<input name="3d-8" type='hidden' value="true">																							<!-- HIDDEN INPUT TO IDENTIFY THIS BUTTON. -->
 		<input name="targetURL" type="hidden" value="<?php echo $GLOBALS['basic_link_3']; ?>">													<!-- HIDDEN INPUT WHICH GETS TARGET URL FROM DATABASE. -->
 			<?php if ( true == $GLOBALS['cookie3d8'] ) { 																										//IF COOKIE EXIST... ?>
