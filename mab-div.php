@@ -3,7 +3,7 @@
 		if ( false == $GLOBALS['advanced_toggle_custom_css'] ) {
 	?>
 			<!--  M A B   D E F A U L T   C S S  -->
-			<link rel="stylesheet" type="text/css" href="<?php echo plugins_url() . '/multipurpose-animated-buttons/css/mab-default-style.css'; ?>" media="screen" />
+			<link rel="stylesheet" type="text/css" href="<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/css/mab-default-style.css'; ?>" media="screen" />
 			<style type="text/css">
 				.button-3d {
 					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>");
