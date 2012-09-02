@@ -101,7 +101,7 @@
 	function mab_activate() {
 	if (empty( $GLOBALS['basic_settings'] ) && empty( $GLOBALS['advanced_settings'] ) ) {
 		$bs = array(
-			'button_count'       =>	'1',
+			'button_count'       =>	'5',
 			'button_type'			   =>	'social',
 //    'link_font_size'		 =>	'',
 			'link_font_color'		 =>	'333333',
