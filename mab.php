@@ -80,7 +80,7 @@
 	//RESET SETTINGS
 
 	if ( true == $GLOBALS['mab_reset_settings'] ) {
-		mab_activate();
+		mab_reset();
 		$targetURL = mab_current_url();
 		header('Location: ' . $targetURL . '&mab_reset=true' );
 	}
@@ -95,17 +95,13 @@
 			delete_option( 'mab_plugin_basic_settings' );
 			delete_option( 'mab_plugin_advanced_settings' );
 			delete_option( 'mab_plugin_info_settings' );
-
 		}
 	}
-
+	
 	function mab_activate() {
-		if ( true == $GLOBALS['mab_reset_settings'] ) {
-			delete_option( 'mab_plugin_basic_settings' );
-			delete_option( 'mab_plugin_advanced_settings' );
-			delete_option( 'mab_plugin_info_settings' );
+	if (empty( $GLOBALS['basic_settings'] ) && empty( $GLOBALS['advanced_settings'] ) ) {
 		$bs = array(
-			'button_count'       =>	'5',
+			'button_count'       =>	'1',
 			'button_type'			   =>	'social',
 //    'link_font_size'		 =>	'',
 			'link_font_color'		 =>	'333333',
@@ -150,7 +146,59 @@
 */		);
 		update_option( 'mab_plugin_basic_settings', $bs );
 		update_option( 'mab_plugin_advanced_settings', $as );
-		}
+	 }
+	}
+	
+	function mab_reset() {
+			delete_option( 'mab_plugin_basic_settings' );
+			delete_option( 'mab_plugin_advanced_settings' );
+			delete_option( 'mab_plugin_info_settings' );
+		$bs = array(
+			'button_count'       =>	'1',
+			'button_type'			   =>	'social',
+//    'link_font_size'		 =>	'',
+			'link_font_color'		 =>	'333333',
+/*    'link_1'				     =>	'',
+			'link_2'			       =>	'',
+			'link_3'				     =>	'',
+			'link_4'					   =>	'',
+			'link_5'					   =>	'',
+			'link_1_title'       =>	'',
+			'link_2_title'       =>	'',
+			'link_3_title'       =>	'',
+			'link_4_title'       =>	'',
+			'link_5_title'       =>	'',
+			'facebook'           =>	'',
+*/		'facebook_app_id'    =>	'xxxxxxxxxxxxxxxx',
+/*		'twitter'            =>	'',
+			'google'             =>	'',
+			'pinterest'          =>	'',
+			'feed'               =>	'',
+			'feed_src'           =>	'',
+*/		'gradient_color_1'   =>	'EEEEEE',
+  		'gradient_color_2'   => 'FFFFFF',
+			'shadow_color'   		 => 'CCCCCC'
+		);
+
+			$as = array(
+			'toggle_cookies'     =>	'1',
+/*		'toggle_custom_css'  =>	'',
+			'custom_css'         =>	'',
+*/    'toggle_social_js'   =>	'1',
+  		'toggle_footer_link' =>	'1',
+/*     button-1-visited'	 =>	'',
+			'button-2-visited' 	 =>	'',
+			'button-3-visited' 	 =>	'',
+			'button-4-visited'   =>	'',
+			'button-5-visited'   =>	'',
+			'button-6-visited'   =>	'',
+			'button-7-visited'   =>	'',
+			'button-8-visited'   =>	'',
+			'button-9-visited'   =>	'',
+			'button-0-visited'   =>	''
+*/		);
+		update_option( 'mab_plugin_basic_settings', $bs );
+		update_option( 'mab_plugin_advanced_settings', $as );
 	}
 	
 	//PLUGIN MAIN FILES
