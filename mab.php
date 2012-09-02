@@ -154,7 +154,7 @@
 			delete_option( 'mab_plugin_advanced_settings' );
 			delete_option( 'mab_plugin_info_settings' );
 		$bs = array(
-			'button_count'       =>	'1',
+			'button_count'       =>	'5',
 			'button_type'			   =>	'social',
 //    'link_font_size'		 =>	'',
 			'link_font_color'		 =>	'333333',
