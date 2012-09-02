@@ -35,6 +35,7 @@
 	$basic_settings = get_option( 'mab_plugin_basic_settings' );
 	$advanced_settings = get_option( 'mab_plugin_advanced_settings');
 	$info_settings = get_option( 'mab_plugin_info_settings' );
+	$mab_first_settings = $basic_settings['first'];
 	$mab_reset_settings = $info_settings['reset_settings'];
 	$basic_button_count = $basic_settings['button_count'];
 	$basic_button_type = $basic_settings['button_type'];
@@ -99,8 +100,9 @@
 	}
 	
 	function mab_activate() {
-	if (empty( $GLOBALS['basic_settings'] ) && empty( $GLOBALS['advanced_settings'] ) ) {
+	if (empty( $GLOBALS['mab_first_settings'] ) {
 		$bs = array(
+		  'first'       =>	'1',
 			'button_count'       =>	'5',
 			'button_type'			   =>	'social',
 //    'link_font_size'		 =>	'',
