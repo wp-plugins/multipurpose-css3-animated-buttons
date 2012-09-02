@@ -88,20 +88,23 @@
 	//ACTIVATION & DEACTIVATION HOOKS
 
 	register_deactivation_hook( __FILE__, 'mab_deactivate' );
-//register_activation_hook( __FILE__, 'mab_activate_new' );
+	register_activation_hook( __FILE__, 'mab_activate' );
 	
 	function mab_deactivate() {
 		if ( true == $GLOBALS['advanced_toggle_delete_settings'] ) {
 			delete_option( 'mab_plugin_basic_settings' );
 			delete_option( 'mab_plugin_advanced_settings' );
 			delete_option( 'mab_plugin_info_settings' );
+
 		}
 	}
 
 	function mab_activate() {
-		delete_option( 'mab_plugin_basic_settings' );
-		delete_option( 'mab_plugin_advanced_settings' );
-		delete_option( 'mab_plugin_info_settings' );
+		if ( true == $GLOBALS['mab_reset_settings'] ) {
+			delete_option( 'mab_plugin_basic_settings' );
+			delete_option( 'mab_plugin_advanced_settings' );
+			delete_option( 'mab_plugin_info_settings' );
+		}
 		$bs = array(
 			'button_count'       =>	'5',
 			'button_type'			   =>	'social',
