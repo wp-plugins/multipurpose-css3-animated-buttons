@@ -1,4 +1,5 @@
 <?php
+
 /*
 	Plugin Name: Multipurpose CSS3 Animated Buttons
 	Plugin URI: http://www.sebla.dk/mab
@@ -8,6 +9,7 @@
 	License: GPL2
 	Version: 0.0.1
 */
+
 /* 
 	Copyright 2012-2013  Erk  (email : erkishei at gmail.com)
 	This program is free software; you can redistribute it and/or modify
@@ -21,105 +23,118 @@
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-/* 
-	If there are erroneous and/or non-standard coding in this plugin, please contact me via : erkishei at gmail.com 
-	I'm a novice developer but I'm doing my best to follow the rules from (http:']//make.wordpress.org/core/handbook/coding-standards/)
-	M	U	L	T	I	P	U	R	P	O	S	E	 	C	S	S	3	 	A	N	I	M	A	T	E	D	 	B	U	T	T	O	N	S	.
+
+/*
+	If there are erroneous and/or non-standard coding in this plugin, please contact me via : multipurpose.ab at gmail.com
+	I'm a novice developer but I'm doing my best to follow the rules from (http://make.wordpress.org/core/handbook/coding-standards/)
+	MULTIPURPOSE CSS3 ANIMATED BUTTONS.
 */
-	// D E C L A R A T I O N S
+
+	//DECLARATIONS
+
 	$basic_settings = get_option( 'mab_plugin_basic_settings' );
 	$advanced_settings = get_option( 'mab_plugin_advanced_settings');
+	$info_settings = get_option( 'mab_plugin_info_settings' );
+	$mab_reset_settings = $info_settings['reset_settings'];
 	$basic_button_count = $basic_settings['button_count'];
 	$basic_button_type = $basic_settings['button_type'];
 	$basic_link_font_size = $basic_settings['link_font_size'];		
 	$basic_link_font_color = $basic_settings['link_font_color'];  
-	$basic_link_1 = $basic_settings['link_1'];      
-	$basic_link_2 = $basic_settings['link_2'];  
-	$basic_link_3 = $basic_settings['link_3'];     
-	$basic_link_4 = $basic_settings['link_4'];  
-	$basic_link_5 = $basic_settings['link_5'];       
-	$basic_link_1_title = $basic_settings['link_1_title'];       
-	$basic_link_2_title = $basic_settings['link_2_title'];            
-	$basic_link_3_title = $basic_settings['link_3_title'];            
-	$basic_link_4_title = $basic_settings['link_4_title'];             
-	$basic_link_5_title = $basic_settings['link_5_title'];              
-	$basic_facebook  = $basic_settings['facebook'];                   
-	$basic_facebook_app_id  = $basic_settings['facebook_app_id'];          
-	$basic_twitter	 = $basic_settings['twitter'];                       
-	$basic_google = $basic_settings['google'];                       
-	$basic_pinterest = $basic_settings['pinterest'];                      
-	$basic_feed = $basic_settings['feed'];                       
-	$basic_feed_src = $basic_settings['feed_src'];                          
-	$basic_gradient_color_1 = $basic_settings['gradient_color_1'];	 
+	$basic_link_1 = $basic_settings['link_1'];
+	$basic_link_2 = $basic_settings['link_2'];
+	$basic_link_3 = $basic_settings['link_3'];
+	$basic_link_4 = $basic_settings['link_4'];
+	$basic_link_5 = $basic_settings['link_5'];
+	$basic_link_1_title = $basic_settings['link_1_title'];
+	$basic_link_2_title = $basic_settings['link_2_title'];
+	$basic_link_3_title = $basic_settings['link_3_title'];
+	$basic_link_4_title = $basic_settings['link_4_title'];
+	$basic_link_5_title = $basic_settings['link_5_title'];
+	$basic_facebook  = $basic_settings['facebook'];
+	$basic_facebook_app_id  = $basic_settings['facebook_app_id'];
+	$basic_twitter	 = $basic_settings['twitter'];
+	$basic_google = $basic_settings['google'];
+	$basic_pinterest = $basic_settings['pinterest'];
+	$basic_feed = $basic_settings['feed'];
+	$basic_feed_src = $basic_settings['feed_src'];
+	$basic_gradient_color_1 = $basic_settings['gradient_color_1'];
 	$basic_gradient_color_2 = $basic_settings['gradient_color_2'];
-	$basic_shadow_color = $basic_settings['shadow_color'];    
-	$advanced_toggle_cookies = $advanced_settings['toggle_cookies'];        
-	$advanced_toggle_custom_css = $advanced_settings['toggle_custom_css']; 
-	$advanced_custom_css = $advanced_settings['custom_css'];                 
-	$advanced_toggle_social_js	= $advanced_settings['toggle_social_js'];      
-	$advanced_toggle_footer_link	= $advanced_settings['toggle_footer_link']; 
-	$cookie3d1 = $_COOKIE['button-1-visited'];                               
-	$cookie3d2 = $_COOKIE['button-2-visited'];                              
-	$cookie3d3 = $_COOKIE['button-3-visited'];                                
-	$cookie3d4 = $_COOKIE['button-4-visited'];                             
-	$cookie3d5 = $_COOKIE['button-5-visited'];                               
-	$cookie3d6 = $_COOKIE['button-6-visited'];                                
-	$cookie3d7 = $_COOKIE['button-7-visited'];                              
-	$cookie3d8 = $_COOKIE['button-8-visited'];                          
-	$cookie3d9 = $_COOKIE['button-9-visited'];                            
-	$cookie3d0 = $_COOKIE['button-0-visited']; 
-	$info_settings = get_option( 'mab_plugin_info_settings' );
-	$mab_reset_settings = $info_settings['reset_settings'];
-	// R E S E T   S E T T I N G S
-	if ( true == $GLOBALS['mab_reset_settings'] ) {  
+	$basic_shadow_color = $basic_settings['shadow_color'];
+	$advanced_toggle_cookies = $advanced_settings['toggle_cookies'];
+	$advanced_toggle_custom_css = $advanced_settings['toggle_custom_css'];
+	$advanced_custom_css = $advanced_settings['custom_css'];
+	$advanced_toggle_social_js	= $advanced_settings['toggle_social_js'];
+	$advanced_toggle_delete_settings	= $advanced_settings['toggle_delete_settings'];
+	$advanced_toggle_footer_link	= $advanced_settings['toggle_footer_link'];
+	$cookie3d1 = $_COOKIE['button-1-visited'];
+	$cookie3d2 = $_COOKIE['button-2-visited'];
+	$cookie3d3 = $_COOKIE['button-3-visited'];
+	$cookie3d4 = $_COOKIE['button-4-visited'];
+	$cookie3d5 = $_COOKIE['button-5-visited'];
+	$cookie3d6 = $_COOKIE['button-6-visited'];
+	$cookie3d7 = $_COOKIE['button-7-visited'];
+	$cookie3d8 = $_COOKIE['button-8-visited'];
+	$cookie3d9 = $_COOKIE['button-9-visited'];
+	$cookie3d0 = $_COOKIE['button-0-visited'];
+
+	//RESET SETTINGS
+
+	if ( true == $GLOBALS['mab_reset_settings'] ) {
 		mab_activate();
 		$targetURL = mab_current_url();
 		header('Location: ' . $targetURL . '&mab_reset=true' );
-	}                            
-	// A C T I V A T I O N   &   D E A C T I V A T I O N   H O O K S
-	register_deactivation_hook( __FILE__, 'mab_deactivate' );
-	register_activation_hook( __FILE__, 'mab_activate' );
-	function mab_deactivate() {
-		delete_option( 'mab_plugin_basic_settings' );
-		delete_option( 'mab_plugin_advanced_settings' ); 
-		delete_option( 'mab_plugin_info_settings' );
 	}
+
+	//ACTIVATION & DEACTIVATION HOOKS
+
+	register_deactivation_hook( __FILE__, 'mab_deactivate' );
+//register_activation_hook( __FILE__, 'mab_activate_new' );
+	
+	function mab_deactivate() {
+		if ( true == $GLOBALS['advanced_toggle_delete_settings'] ) {
+			delete_option( 'mab_plugin_basic_settings' );
+			delete_option( 'mab_plugin_advanced_settings' );
+			delete_option( 'mab_plugin_info_settings' );
+		}
+	}
+
 	function mab_activate() {
 		delete_option( 'mab_plugin_basic_settings' );
 		delete_option( 'mab_plugin_advanced_settings' );
 		delete_option( 'mab_plugin_info_settings' );
 		$bs = array(
-			'button_count'       =>	'5',		
-			'button_type'			   =>	'social',		
-//    'link_font_size'		 =>	'',			
-			'link_font_color'		 =>	'333333',			
-/*    'link_1'				     =>	'',						
-			'link_2'			       =>	'',								
-			'link_3'				     =>	'',							
-			'link_4'					   =>	'',							
-			'link_5'					   =>	'',				
-			'link_1_title'       =>	'',			
-			'link_2_title'       =>	'',		
-			'link_3_title'       =>	'',				
-			'link_4_title'       =>	'',					
-			'link_5_title'       =>	'',			
-			'facebook'           =>	'',				
-*/		'facebook_app_id'    =>	'xxxxxxxxxxxxxxxx',				
-/*		'twitter'            =>	'',							
-			'google'             =>	'',						
-			'pinterest'          =>	'',						
-			'feed'               =>	'',							
-			'feed_src'           =>	'',							
-*/		'gradient_color_1'   =>	'EEEEEE',		
+			'button_count'       =>	'5',
+			'button_type'			   =>	'social',
+//    'link_font_size'		 =>	'',
+			'link_font_color'		 =>	'333333',
+/*    'link_1'				     =>	'',
+			'link_2'			       =>	'',
+			'link_3'				     =>	'',
+			'link_4'					   =>	'',
+			'link_5'					   =>	'',
+			'link_1_title'       =>	'',
+			'link_2_title'       =>	'',
+			'link_3_title'       =>	'',
+			'link_4_title'       =>	'',
+			'link_5_title'       =>	'',
+			'facebook'           =>	'',
+*/		'facebook_app_id'    =>	'xxxxxxxxxxxxxxxx',
+/*		'twitter'            =>	'',
+			'google'             =>	'',
+			'pinterest'          =>	'',
+			'feed'               =>	'',
+			'feed_src'           =>	'',
+*/		'gradient_color_1'   =>	'EEEEEE',
   		'gradient_color_2'   => 'FFFFFF',
 			'shadow_color'   		 => 'CCCCCC'
 		);
-			$as = array(		
+
+			$as = array(
 			'toggle_cookies'     =>	'1',
 /*		'toggle_custom_css'  =>	'',
-			'custom_css'         =>	'',					
-*/    'toggle_social_js'   =>	'1',		
-  		'toggle_footer_link' =>	'1',	
+			'custom_css'         =>	'',
+*/    'toggle_social_js'   =>	'1',
+  		'toggle_footer_link' =>	'1',
 /*     button-1-visited'	 =>	'',
 			'button-2-visited' 	 =>	'',
 			'button-3-visited' 	 =>	'',
@@ -133,8 +148,10 @@
 */		);
 		update_option( 'mab_plugin_basic_settings', $bs );
 		update_option( 'mab_plugin_advanced_settings', $as );
-   }
-	// P L U G I N   M A I N   F I L E S
+	}
+	
+	//PLUGIN MAIN FILES
+	
 	include_once 'settings/mab-plugin.php';	
 	add_action ( 'wp_head', 'mab_display' );
 	function mab_display()	{
@@ -146,9 +163,10 @@
 			include_once 'mab-f-div.php'; 
 		}
 	}
-	// M I S C   F U N C T I O N   G R O U P
+	//MISC FUNCTION GROUP
+	
 /**
-* RETURNS CURRENT URL
+*	RETURNS CURRENT URL
 *
 */
 	function mab_current_url() {	
@@ -162,6 +180,7 @@
  			}
 	return $url;
 	}
+
 /**
 *	RETURNS FIRST IMAGE URL FROM POSTS
 *
@@ -178,6 +197,7 @@
 		}
 		return $img;
 	}
+
 /**
 *	URL VALIDATION
 *
@@ -185,6 +205,7 @@
 	function isValidURL( $url ) {
     return preg_match ('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i', $url );
   }
+
 /**
 *	DIGIT VALIDATION
 *
@@ -192,18 +213,21 @@
   function isDigits( $element ) {
     return preg_match ('/[^0-9]/', $element );
   }
+
 /**
 *	COLOR CODE VALIDATION WITHOUT "#"
 *
 */
   function isHex( $color ) {
     return !preg_match('/^[A-F0-9]{6}$/i', $color );
-  } 
+  }
+
 /**
 *	CSS CODE VALIDATION
 *
 */
   function isValidCSS( $CsS ) {
     return preg_match ('/<\?php|<\?|</i', $CsS );
-  } 
+  }
+  
 ?>

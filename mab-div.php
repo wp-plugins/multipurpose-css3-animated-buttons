@@ -1,26 +1,28 @@
 	<?php
-	// S T Y L E S
+	//STYLES
 		if ( false == $GLOBALS['advanced_toggle_custom_css'] ) {
 	?>
-			<!--  M A B   D E F A U L T   C S S  -->
-			<link rel="stylesheet" type="text/css" href="<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/css/mab-default-style.css'; ?>" media="screen" />
+			<!-- MAB DEFAULT CSS -->
+			s<link rel="stylesheet" type="text/css" href="<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/css/mab-default-style.css'; ?>" media="screen" />
 			<style type="text/css">
 				.button-3d {
 					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>");
-					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>"), -webkit-gradient(linear, 0 0, 0 100%, from(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>), to(#<?php echo $GLOBALS['basic_gradient_color_2']; ?>));
-					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>"), -moz-linear-gradient(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>, #<?php echo $GLOBALS['basic_gradient_color_2']; ?>);
+					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>"),
+					-webkit-gradient(linear, 0 0, 0 100%, from(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>), to(#<?php echo $GLOBALS['basic_gradient_color_2']; ?>));
+					background-image: url("<?php echo plugins_url() . '/multipurpose-css3-animated-buttons/images/social-hi.png'; ?>"),
+					-moz-linear-gradient(#<?php echo $GLOBALS['basic_gradient_color_1']; ?>, #<?php echo $GLOBALS['basic_gradient_color_2']; ?>);
 					box-shadow: 2px 2px 2px #<?php echo $GLOBALS['basic_shadow_color']; ?>;
 				}
 			</style>
-			<!--  E N D -->
+			<!-- END -->
 	<?php
-		} else { 
+		} else {
 	?>
-			<!--  M A B   C U S T O M   C S S  -->
+			<!-- MAB CUSTOM CSS  -->
 			<style type="text/css">
 				<?php echo $GLOBALS['advanced_custom_css']; ?>
 			</style>
-			<!--  E N D -->
+			<!-- END -->
 	<?php
 		}
 	?>		
@@ -103,4 +105,4 @@
 				}
 			?> 
 		</div>
-	<!--  E N D  -->	
+	<!--  END  -->	

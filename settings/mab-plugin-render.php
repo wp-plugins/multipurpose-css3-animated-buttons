@@ -34,15 +34,18 @@
 			float:left;
 			width:65%;
 		}
-		 #bsc-tab tr:nth-child(2n+2), #adv-tab tr:nth-child(2n+1) {
+		 #bsc-tab tr:nth-child(2n+2),
+		 #adv-tab tr:nth-child(2n+1) {
       background: #555;
       color:#fff;
       font-weight:bold;
     }
-    #bsc-tab tr:nth-child(2n+1), #adv-tab tr:nth-child(2n+2) {
+    #bsc-tab tr:nth-child(2n+1),
+    #adv-tab tr:nth-child(2n+2) {
       background: #eee;
     }
-    #bsc-tab, #adv-tab{ width:100%; }
+    #bsc-tab,
+    #adv-tab{ width:100%; }
 	</style>
 	<div id="fb-root"></div>
 		<script>(function(d, s, id) {

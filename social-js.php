@@ -1,4 +1,4 @@
-<!--	S	O	C	I	A	L		J	A	V	A	S	C	R	I	P	T	-->
+<!-- SOCIAL JAVASCRIPT	-->
 	<!-- FACEBOOK -->
 		<div id="fb-root"></div>
 		<script>
@@ -26,4 +26,4 @@
 		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 	<!-- PINTEREST -->
 		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-<!--	E	N	D	-->
+<!-- END -->

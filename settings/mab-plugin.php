@@ -1,5 +1,5 @@
 <?php
-	// S E T T I N G S   M E N U   &   P A G E
+	//SETTINGS MENU & PAGE
 	add_action( 'admin_menu', 'mab_plugin_menu' );
 	add_action( 'admin_init', 'mab_plugin_initialize_basic_settings' );
 	add_action( 'admin_init', 'mab_plugin_initialize_advanced_settings' );
@@ -28,7 +28,7 @@
 		add_settings_field('reset_settings', 'Reset all settings to defaults', 'mab_reset_settings_callback', 'mab_plugin_info_settings', 'info_settings_section' );
 		register_setting(  'mab_plugin_info_settings', 'mab_plugin_info_settings' );
 	}
-	// C A L L B A C K S
+	//CALLBACKS
 	function mab_basic_settings_callback() {																											
 		echo '';
 	}
@@ -241,6 +241,11 @@
 	function mab_toggle_social_js_callback($args) {																								 
 		$html = '<input type="checkbox" id="show_footer" name="mab_plugin_advanced_settings[toggle_social_js]" value="1" ' . checked(1, $GLOBALS['advanced_toggle_social_js'], false) . '/>';   
 		$html .= '<label for="toggle_footer_link"> '  . $args[0] . '</label><small>&nbsp;Disable social javascript if you want to use your own code.</small>';   
+		echo $html;  
+	}
+	function mab_toggle_delete_settings_callback($args) {																								 
+		$html = '<input type="checkbox" id="delete_settings" name="mab_plugin_advanced_settings[toggle_delete_settings]" value="1" ' . checked(1, $GLOBALS['advanced_toggle_delete_settings'], false) . '/>';   
+		$html .= '<label for="toggle_delete_settings"> '  . $args[0] . '</label><small>&nbsp;Delete all settings.</small>';   
 		echo $html;  
 	}
 	function mab_toggle_footer_link_callback($args) {																								 

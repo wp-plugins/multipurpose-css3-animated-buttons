@@ -105,8 +105,8 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'facebook' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Facebook" url is "35"!'),'error');
+      } elseif ( strlen( $input[ 'facebook' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Facebook" url is "80"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
@@ -137,8 +137,8 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'twitter' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Twitter" url is "35"!'),'error');
+      } elseif ( strlen( $input[ 'twitter' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Twitter" url is "80"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
@@ -153,8 +153,8 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'google' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Google" url is "35"!'),'error');
+      } elseif ( strlen( $input[ 'google' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Google" url is "80"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
@@ -169,8 +169,8 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'pinterest' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Pinterest" url is "35"!'),'error');
+      } elseif ( strlen( $input[ 'pinterest' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Pinterest" url is "80"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
@@ -185,8 +185,8 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'feed' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Feedburner" url is "35"!'),'error');
+      } elseif ( strlen( $input[ 'feed' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Max character length for "Feedburner" url is "80"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
@@ -285,28 +285,28 @@
         $input = $GLOBALS['basic_settings'];
         return $input;
       //Validate Link Titles
-      } elseif ( strlen( $input[ 'link_1_title' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"36" characters are too long for "Link-1 title"!'),'error');
+      } elseif ( strlen( $input[ 'link_1_title' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"80" characters are too long for "Link-1 title"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'link_2_title' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"36" characters are too long for "Link-2 title"!'),'error');
+      } elseif ( strlen( $input[ 'link_2_title' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"80" characters are too long for "Link-2 title"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'link_3_title' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"36" characters are too long for "Link-3 title"!'),'error');
+      } elseif ( strlen( $input[ 'link_3_title' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"80" characters are too long for "Link-3 title"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'link_4_title' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"36" characters are too long for "Link-4 title"!'),'error');
+      } elseif ( strlen( $input[ 'link_4_title' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"80" characters are too long for "Link-4 title"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-      } elseif ( strlen( $input[ 'link_5_title' ] ) >= 36 && $GLOBALS['basic_button_type'] == 'social' ) {
-        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"36" characters are too long for "Link-5 title"!'),'error');
+      } elseif ( strlen( $input[ 'link_5_title' ] ) >= 81 && $GLOBALS['basic_button_type'] == 'social' ) {
+        add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"80" characters are too long for "Link-5 title"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;      

@@ -9,6 +9,7 @@
     add_settings_field('custom_css', 'Enter your custom CSS', 'mab_custom_css_callback', 'mab_plugin_advanced_settings', 'advanced_settings_section' );
   }
   add_settings_field('toggle_social_js', 'Social Javascript', 'mab_toggle_social_js_callback', 'mab_plugin_advanced_settings', 'advanced_settings_section' );
+  add_settings_field('toggle_delete_settings', 'Delete settings on deactivate', 'mab_toggle_delete_settings_callback', 'mab_plugin_advanced_settings', 'advanced_settings_section' );
   add_settings_field('toggle_footer_link', 'Footer Link', 'mab_toggle_footer_link_callback', 'mab_plugin_advanced_settings', 'advanced_settings_section' );
   register_setting(  'mab_plugin_advanced_settings', 'mab_plugin_advanced_settings', 'mab_plugin_validate_advanced_settings' );
   function mab_plugin_validate_advanced_settings($input) {

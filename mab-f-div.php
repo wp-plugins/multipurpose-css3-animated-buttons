@@ -1,4 +1,5 @@
-<!--  M A B   F O O T E R   B A C K L I N K  -->
+<!-- MAB FOOTER BACKLINK -->
+
 	<div style="
 		background-color:#fff;
 		position:absolute;
@@ -10,6 +11,9 @@
 		text-align:left;
 		z-index:9999;
 	">
+
 		<a href="http://sebla.dk/mab">Powered by Multipurpose CSS3 Animated Buttons</a>
+
 	</div>
-<!--	E	N	D	-->
+
+<!-- END -->
