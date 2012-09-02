@@ -104,7 +104,6 @@
 			delete_option( 'mab_plugin_basic_settings' );
 			delete_option( 'mab_plugin_advanced_settings' );
 			delete_option( 'mab_plugin_info_settings' );
-		}
 		$bs = array(
 			'button_count'       =>	'5',
 			'button_type'			   =>	'social',
@@ -151,6 +150,7 @@
 */		);
 		update_option( 'mab_plugin_basic_settings', $bs );
 		update_option( 'mab_plugin_advanced_settings', $as );
+		}
 	}
 	
 	//PLUGIN MAIN FILES
