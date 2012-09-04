@@ -79,8 +79,14 @@
     register_setting('mab_plugin_basic_settings', 'mab_plugin_basic_settings', 'mab_plugin_validate_basic_settings');
     //VALIDATION
     function mab_plugin_validate_basic_settings($input) {
+      //Ignore rest of the validation on button count change
+      if ( $input[ 'button_count' ] != $GLOBALS['button_count'] ) {
+        $backup = $input[ 'button_count' ];
+        $input = $GLOBALS['basic_settings'];
+        $input[ 'button_count' ] = $backup;
+        return $input;
       //Ignore rest of the validation on button type change
-      if ( $input[ 'button_type' ] == 'social' && $GLOBALS['basic_button_type'] == 'links' ) {
+      } elseif ( $input[ 'button_type' ] == 'social' && $GLOBALS['basic_button_type'] == 'links' ) {
         $input = $GLOBALS['basic_settings'];
         $input[ 'button_type' ] = 'social';
         return $input;    
@@ -88,24 +94,13 @@
         $input = $GLOBALS['basic_settings'];
         $input[ 'button_type' ] = 'links';
         return $input;  
-      }
-      //Ignore rest of the validation on button count change
-      if ( $input[ 'button_count' ] != $GLOBALS['button_count'] ) {
-        $backup = $input[ 'button_count' ];
-        $input = $GLOBALS['basic_settings'];
-        $input[ 'button_count' ] = $backup;
-        return $input;    
-      } else {
-        //RETURN VALIDATED SETTINGS
-        return $input;
-      }
       //Validate Button Count
 /*    if ( !isDigits( $input[ 'button_count' ] ) ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"Button Count" must be a digit!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-*/    if ( $input[ 'button_count' ] >= 6 || $input[ 'button_count' ] <= 0 ) {
+*/    } elseif ( $input[ 'button_count' ] >= 6 || $input[ 'button_count' ] <= 0 ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Invalid "Button Count"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
