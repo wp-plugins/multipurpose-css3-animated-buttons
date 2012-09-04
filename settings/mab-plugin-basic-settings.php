@@ -90,7 +90,7 @@
         return $input;  
       }
       //Ignore rest of the validation on button count change
-      if ( $input[ 'button_count' ] <> $GLOBALS['button_count'] ) {
+      if ( $input[ 'button_count' ] != $GLOBALS['button_count'] ) {
         $backup = $input[ 'button_count' ];
         $input = $GLOBALS['basic_settings'];
         $input[ 'button_count' ] = $backup;
