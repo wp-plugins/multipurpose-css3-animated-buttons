@@ -31,8 +31,10 @@
 */
 
 /**
- * Add Settings link to plugins
- */
+* Add Settings link to plugins
+*
+*/
+
   function mab_add_settings_link($links, $file) {
     static $this_plugin;
     if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
@@ -41,8 +43,9 @@
       array_unshift($links, $settings_link);
     }
     return $links;
- }
- add_filter('plugin_action_links', 'mab_add_settings_link', 10, 2 );
+   }
+   
+   add_filter('plugin_action_links', 'mab_add_settings_link', 10, 2 );
 
 	//DECLARATIONS
 
