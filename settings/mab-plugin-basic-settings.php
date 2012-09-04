@@ -77,6 +77,7 @@
     add_settings_field('gradient_color_2', 'Gradient bottom color', 'mab_gradient_color_2_callback', 'mab_plugin_basic_settings', 'basic_settings_section');
     add_settings_field('shadow_color', 'Button shadow color', 'mab_shadow_color_callback', 'mab_plugin_basic_settings', 'basic_settings_section');
     register_setting('mab_plugin_basic_settings', 'mab_plugin_basic_settings', 'mab_plugin_validate_basic_settings');
+    //VALIDATION
     function mab_plugin_validate_basic_settings($input) {
       //Ignore rest of the validation on button type change
       if ( $input[ 'button_type' ] == 'social' && $GLOBALS['basic_button_type'] == 'links' ) {
@@ -94,6 +95,9 @@
         $input = $GLOBALS['basic_settings'];
         $input[ 'button_count' ] = $backup;
         return $input;    
+      } else {
+        //RETURN VALIDATED SETTINGS
+        return $input;
       }
       //Validate Button Count
 /*    if ( !isDigits( $input[ 'button_count' ] ) ) {
