@@ -79,7 +79,7 @@
     register_setting('mab_plugin_basic_settings', 'mab_plugin_basic_settings', 'mab_plugin_validate_basic_settings');
     //VALIDATION
     function mab_plugin_validate_basic_settings($input) {
-/*FOR NOW IGNORING VALIDATIN BECAUSE THERE ARE LOTS OF ERRORS WITH IT! 
+/*FOR NOW IGNORING VALIDATION BECAUSE THERE ARE LOTS OF ERRORS WITH IT! 
       //Ignore rest of the validation on button count change
       if ( $input[ 'button_count' ] != $GLOBALS['button_count'] ) {
         $backup = $input[ 'button_count' ];

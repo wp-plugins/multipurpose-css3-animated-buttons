@@ -37,7 +37,7 @@
 add_action( 'admin_notices', 'mab_admin_notice' );
 function mab_admin_notice(){
      if ( $GLOBALS['mab_first_settings'] == '1' )
-          echo '<div><p>You should configure "Multipurpose CSS3 Animated Buttons" ' . '<a href="plugins.php?page=mab_plugin_settings">'.__("Settings.", "mab").'</a></p></div>';
+          echo '<div class="updated settings-error" id="setting-error-settings_updated">><p>You should configure "Multipurpose CSS3 Animated Buttons" ' . '<a href="plugins.php?page=mab_plugin_settings">'.__("Settings.", "mab").'</a></p></div>';
 }
 
 /**
