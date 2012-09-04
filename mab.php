@@ -30,6 +30,20 @@
 	MULTIPURPOSE CSS3 ANIMATED BUTTONS.
 */
 
+/**
+ * Add Settings link to plugins
+ */
+  function add_settings_link($links, $file) {
+    static $this_plugin;
+    if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
+    if ($file == $this_plugin){
+      $settings_link = '<a href="plugins.php?page=mab_plugin_settings">'.__("Settings", "mab").'</a>';
+      array_unshift($links, $settings_link);
+    }
+    return $links;
+ }
+ add_filter('plugin_action_links', 'add_settings_link', 10, 2 );
+
 	//DECLARATIONS
 
 	$basic_settings = get_option( 'mab_plugin_basic_settings' );
