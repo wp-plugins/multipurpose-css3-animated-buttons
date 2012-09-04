@@ -31,6 +31,17 @@
 */
 
 /**
+* ADMIN NOTICE
+*
+*/
+add_action( 'admin_notices', 'mab_admin_notice' );
+function mab_admin_notice(){
+     global $mab_first_settings;
+     if ( $mab_first_settings == '1' )
+          echo '<div><p>You should configure "Multipurpose CSS3 Animated Buttons" ' . '<a href="plugins.php?page=mab_plugin_settings">'.__("Settings", "mab").'</a></p></div>';
+}
+
+/**
 * Add Settings link to plugins
 *
 */
