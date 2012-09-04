@@ -102,7 +102,7 @@
 	function mab_activate() {
 	if ( empty( $GLOBALS['mab_first_settings'] ) ) {
 		$bs = array(
-		  'first'       =>	'1',
+		  'first'              =>	'1',
 			'button_count'       =>	'5',
 			'button_type'			   =>	'social',
 //    'link_font_size'		 =>	'',

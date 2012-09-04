@@ -88,6 +88,13 @@
         $input[ 'button_type' ] = 'links';
         return $input;  
       }
+      //Ignore rest of the validation on button count change
+      if ( ! $input[ 'button_count' ] == $GLOBALS['button_count'] ) {
+        $backup = $input[ 'button_count' ];
+        $input = $GLOBALS['basic_settings'];
+        $input[ 'button_count' ] = $backup;
+        return $input;    
+      }
       //Validate Button Count
 /*    if ( !isDigits( $input[ 'button_count' ] ) ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('"Button Count" must be a digit!'),'error');
@@ -98,7 +105,7 @@
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Invalid "Button Count"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
-        return $input; 
+        return $input;
       //Validate Facebook
       } elseif ( empty( $input[ 'facebook' ] ) && $GLOBALS['basic_button_type'] == 'social' ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('You must enter your "Facebook" url!'),'error');
