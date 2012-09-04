@@ -79,6 +79,7 @@
     register_setting('mab_plugin_basic_settings', 'mab_plugin_basic_settings', 'mab_plugin_validate_basic_settings');
     //VALIDATION
     function mab_plugin_validate_basic_settings($input) {
+/*FOR NOW IGNORING VALIDATIN BECAUSE THERE ARE LOTS OF ERRORS WITH IT! 
       //Ignore rest of the validation on button count change
       if ( $input[ 'button_count' ] != $GLOBALS['button_count'] ) {
         $backup = $input[ 'button_count' ];
@@ -100,7 +101,7 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-*/    } elseif ( $input[ 'button_count' ] >= 6 || $input[ 'button_count' ] <= 0 ) {
+*//*    } elseif ( $input[ 'button_count' ] >= 6 || $input[ 'button_count' ] <= 0 ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Invalid "Button Count"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
@@ -132,7 +133,7 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-*/    } elseif ( strlen( $input[ 'facebook_app_id' ] ) >= 16  || strlen( $input[ 'facebook_app_id' ] ) <= 0 && $GLOBALS['basic_button_type'] == 'social' ) {
+*//*    } elseif ( strlen( $input[ 'facebook_app_id' ] ) >= 16  || strlen( $input[ 'facebook_app_id' ] ) <= 0 && $GLOBALS['basic_button_type'] == 'social' ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('Digit length for "Facebook App ID" is "15"!'),'error');
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
@@ -239,7 +240,7 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;
-*/    //Validate Links
+*//*    //Validate Links
       } elseif ( empty( $input[ 'link_1' ] ) && $GLOBALS['basic_button_type'] == 'links' ) {
         add_settings_error('unique_identifyer',esc_attr('settings_updated'),__('You must enter your "Link-1" url!'),'error');
         add_action('admin_notices', 'print_errors');
@@ -316,9 +317,9 @@
         add_action('admin_notices', 'print_errors');
         $input = $GLOBALS['basic_settings'];
         return $input;      
-      } else {
+      } else {*/
         //RETURN VALIDATED SETTINGS
         return $input;
-      }
+      //}
     }
 ?>
